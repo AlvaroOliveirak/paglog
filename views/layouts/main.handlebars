@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <style>
+        @charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.74), rgb(35, 35, 70), rgb(5, 1, 1));
+    background-repeat: no-repeat;
+    background-size: 1370px 600px;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    height: 100vh;
+    width: fit-content;
+    position: relative;
+
+}
+main{
+    padding: 30px;
+     margin: 0px 40px ;
+     background-image: linear-gradient(to bottom, rgb(45, 45, 46), rgb(25, 25, 44),rgba(39, 1, 1, 0.842));
+     height: 100vh;
+     width: 600px;
+     position: absolute;
+     position: fixed;
+     left: 56.5%;
+     top:0%;
+     box-shadow: -9px 0px 15px rgba(43, 7, 7, 0.678);
+}
+main>h1{
+    color:rgb(173, 8, 50);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.842);
+    display: inline-block;
+}
+
+#sign{
+    position: absolute;
+    right: 10%;
+}
+#side>h1{
+    background: linear-gradient(to left, rgb(85, 6, 6), rgb(243, 163, 163),rgb(107, 7, 7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#formulario{
+    margin: 80px 20px 40px 80px;
+}
+.cred{
+    margin:5px auto;
+}
+#fp{
+    color: brown;
+    margin-left: 50px ;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#lembrar{
+    margin: 10px auto;
+}
+#log{
+    margin: 60px auto 30px auto;
+    width: 350px;
+    height: 50px;
+    border: black;
+    border-radius: 20px;
+    background-color: rgb(109, 5, 28);
+    box-shadow: inset 2px 2px 2px rgba(160, 4, 56, 0.432);
+    font-size: 16px;
+}
+#log:hover{
+    background-color: rgb(59, 10, 21);
+    box-shadow: inset 2px 2px 2px rgba(160, 4, 56, 0.432), 0px 0px 10px rgba(255, 255, 255, 0.158);
+    cursor: pointer;
+}
+#log2{
+    margin: 40px auto 20px auto;
+    width: 350px;
+    height: 50px;
+    border: black;
+    border-radius: 20px;
+    background-color: rgb(109, 5, 28);
+    box-shadow: inset 2px 2px 2px rgba(160, 4, 56, 0.432);
+    font-size: 16px;
+}
+#log2:hover{
+    background-color: rgb(59, 10, 21);
+    box-shadow: inset 2px 2px 2px rgba(160, 4, 56, 0.432), 0px 0px 10px rgba(255, 255, 255, 0.158);
+    cursor: pointer;
+}
+#or{
+    color: aliceblue;
+    position: absolute;
+    left: 47%;
+}
+a{
+    color: brown;
+    text-decoration: none;
+}
+a#cad{
+    position: absolute;
+    left:40%;
+}
+    </style>
+    
+</head>
+<body>
+
+    <div id="side">
+        <h1>Enterpise-X</h1>
+    </div>
+
+    <main>
+        <h1>Login</h1>
+        <h1 id="sign" style="color: rgba(124, 107, 107, 0.897);">Sign Up</h1>
+        <div id="formulario">
+            <h3 style="color: rgb(151, 0, 0);" class="cred">Your email</h3>
+
+            <form action="/" method="post">
+                <input type="email" placeholder="Your email here" id="email" name="email" size="40px">
+                <h3 style="color: rgb(163, 4, 4);" class="cred">Your password</h3>
+                <input type="password" placeholder="Your password here" id="password" name="password" size="40px" >
+                <br>
+            <input type="radio" name="lembrar" id="lembrar">
+            <label for="lembrar">Keep me loged in</label>
+            <a href="#" id="fp"> forgot your password?</a>
+
+            
+            <button id="log" type="submit">Log in</button> <br>
+             <p id="or">or</p>
+            <button id="log2" onclick="logarg()">Log in with Google</button><br>
+
+            </form> <br>
+            
+
+            <a href="" id="cad">cadastre-se aqui</a>
+        </div>
+    </main>
+    
+    <script> 
+        const email = document.getElementById("email");
+const password = document.getElementById("password");
+
+
+    </script>
+</body>
+</html> 
