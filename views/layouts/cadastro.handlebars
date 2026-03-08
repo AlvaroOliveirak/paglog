@@ -72,7 +72,7 @@ a:hover{
 #lembrar{
     margin: 10px auto;
 }
-#log{
+#cad{
     margin: 60px auto 30px auto;
     width: 350px;
     height: 50px;
@@ -82,7 +82,7 @@ a:hover{
     box-shadow: inset 2px 2px 2px rgba(160, 4, 56, 0.432);
     font-size: 16px;
 }
-#log:hover{
+#cad:hover{
     background-color: rgb(59, 10, 21);
     box-shadow: inset 2px 2px 2px rgba(160, 4, 56, 0.432), 0px 0px 10px rgba(255, 255, 255, 0.158);
     cursor: pointer;
@@ -116,6 +116,7 @@ a#cad{
     left:40%;
 }
     </style>
+    
 </head>
 <body>
 
@@ -124,12 +125,12 @@ a#cad{
     </div>
 
     <main>
-        <h1>Login</h1>
+        <h1>Register</h1>
         <h1 id="sign" style="color: rgba(124, 107, 107, 0.897);">Sign Up</h1>
         <div id="formulario">
             <h3 style="color: rgb(151, 0, 0);" class="cred">Your email</h3>
 
-            <form action="/" method="post">
+            <form action="/cad" method="post">
                 <input type="email" placeholder="Your email here" id="email" name="email" size="40px">
                 <h3 style="color: rgb(163, 4, 4);" class="cred">Your password</h3>
                 <input type="password" placeholder="Your password here" id="password" name="password" size="40px" >
@@ -139,14 +140,14 @@ a#cad{
             <a href="#" id="fp"> forgot your password?</a>
 
             
-            <button id="log" type="submit">Log in</button> <br>
+            <button id="cad" type="submit">Register</button> <br>
              <p id="or">or</p>
             <button id="log2" onclick="logarg()">Log in with Google</button><br>
 
             </form> <br>
             
 
-            <a href="cad" id="cad">cadastre-se aqui</a>
+            <a href="" id="cad">cadastre-se aqui</a>
         </div>
     </main>
     
